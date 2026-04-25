@@ -1,0 +1,111 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatbotActivity">
+
+    <!-- App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:title="Health Chatbot"
+        android:titleTextColor="@android:color/white"
+        android:elevation="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- Main Chatbot UI -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:spacing="16dp">
+
+            <!-- Medical Zone Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medica Zone"
+                android:textColor="@color/primaryColor"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health Chatbot"
+                android:textColor="@color/primaryColor"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Your Medical Assistant Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Medical Assistant"
+                android:textColor="@color/primaryColor"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Your Medical Assistant Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select A disease or Symptom to get health tips"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Spinner for selecting the disease -->
+            <Spinner
+                android:id="@+id/spinnerDisease"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:popupBackground="@color/white"
+            />
+
+            <!-- RecyclerView to display previous tips -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button (FAB) for quick actions -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fabSend"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_chat_24"
+        android:backgroundTint="@color/primaryColor"
+        android:elevation="6dp"
+        android:contentDescription="Send message" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

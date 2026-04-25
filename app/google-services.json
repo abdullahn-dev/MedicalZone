@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28640406415",
+    "project_id": "medicalzone-302",
+    "storage_bucket": "medicalzone-302.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28640406415:android:29afcb0370d883f66d79fa",
+        "android_client_info": {
+          "package_name": "com.example.medicalzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSInUq3B-mjI1kNtMz4y67HvpDMWgLElk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

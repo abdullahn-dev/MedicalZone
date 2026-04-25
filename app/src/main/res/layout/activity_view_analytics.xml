@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Sales Summary Section (Vertical for Portrait, Horizontal for Landscape) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true">
+
+        <!-- Total Sales Text -->
+        <TextView
+            android:id="@+id/totalSalesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Sales: $0.0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Profit Text -->
+        <TextView
+            android:id="@+id/profitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit: $0.0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Actual Sales Text -->
+        <TextView
+            android:id="@+id/actualSalesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actual Sales: $0.0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"/>
+    </LinearLayout>
+
+    <!-- Custom Bar Chart -->
+    <com.example.medicalzone.CustomBarChartView
+        android:id="@+id/salesBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+</LinearLayout>

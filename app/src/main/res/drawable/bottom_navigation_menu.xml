@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_patient"
+        android:icon="@drawable/patient_svgrepo_com"
+        android:title="Patient" />
+
+    <item
+        android:id="@+id/nav_doctor"
+        android:icon="@drawable/doctor_svgrepo_com"
+        android:title="Doctor" />
+
+    <item
+        android:id="@+id/nav_admin"
+        android:icon="@drawable/admin_network_svgrepo_com"
+        android:title="Admin" />
+
+</menu>

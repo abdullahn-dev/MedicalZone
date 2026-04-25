@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Main Heading -->
+    <!-- Main Heading -->
+
+    <TextView
+        android:id="@+id/main1Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Manage Inventory"
+        android:textColor="@color/primaryColor"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Update"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- Sub Heading -->
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update the details of the medicine below"
+        android:textSize="16sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/medicineNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update medicine details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_marginBottom="16dp"/>
+
+
+    <!-- Medicine Price Input -->
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Price"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Medicine Quantity Input -->
+    <EditText
+        android:id="@+id/edtQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Quantity"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/btnSuccess"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@color/primaryColor"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

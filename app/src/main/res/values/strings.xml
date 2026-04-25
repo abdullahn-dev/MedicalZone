@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Medical Zone</string>
+    <string name="userName">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <string-array name="specializations">
+        <item>Cardiology</item>
+        <item>Neurology</item>
+        <item>Orthopedics</item>
+        <item>Pediatrics</item>
+        <item>Dermatology</item>
+        <item>Gynecology</item>
+        <item>General Surgery</item>
+    </string-array>
+
+    <string-array name="diseases">
+        <item>Flu</item>
+        <item>Cough</item>
+        <item>Cold</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Stomach Ache</item>
+        <item>Fever</item>
+        <item>Sore Throat</item>
+        <item>Allergy</item>
+        <item>Fatigue</item>
+        <item>Asthma</item>
+        <item>Pneumonia</item>
+        <item>Migraine</item>
+        <item>Chickenpox</item>
+        <item>Measles</item>
+    </string-array>
+
+</resources>

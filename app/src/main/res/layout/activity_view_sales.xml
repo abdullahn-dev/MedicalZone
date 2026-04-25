@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+   >
+
+    <!-- Admin Panel Heading -->
+    <TextView
+        android:id="@+id/admin_panel_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center" />
+
+    <!-- Sales Overview Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/txtTotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Sales: $0.00"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit (20%): $0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtActualSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actual Inventory Sales: $0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5" />
+    </LinearLayout>
+
+    <!-- Action Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <!-- Button: Refresh -->
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

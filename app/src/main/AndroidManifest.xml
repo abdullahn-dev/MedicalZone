@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img"
+        android:label="Medica Zone"
+        android:roundIcon="@drawable/medica_zone"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicalZone"
+        tools:targetApi="31">
+        <activity
+            android:name=".AnswerQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentProfitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfileActivity"
+            android:exported="false" />
+        <activity android:name=".ManageDoctorsActivity" />
+        <activity android:name=".ManagePatientsActivity" />
+        <activity android:name=".ManageInventoryActivity" />
+        <activity android:name=".ViewSalesActivity" />
+        <activity
+            android:name=".ViewAnalyticsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".EditDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddPatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatbotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyMedicinesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileSetup"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientProfileSetup"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".HealthTipNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

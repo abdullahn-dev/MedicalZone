@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Medicine Name -->
+        <TextView
+            android:id="@+id/medicineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Medicine Price -->
+        <TextView
+            android:id="@+id/medicinePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Medicine Quantity -->
+        <TextView
+            android:id="@+id/medicineQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 0"
+            android:textSize="14sp"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Medicine Expiry Date -->
+        <TextView
+            android:id="@+id/medicineExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expiry: MM/YYYY"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Medicine Manufacturer -->
+        <TextView
+            android:id="@+id/medicineManufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manufacturer"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Medicine Description -->
+        <TextView
+            android:id="@+id/medicineDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textColor="#757575"
+           />
+
+        <!-- Horizontal Layout for Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <!-- Delete Button -->
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Delete Medicine"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="?attr/selectableItemBackground"
+            />
+
+            <!-- Update Button -->
+            <ImageButton
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Update Medicine"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="?attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

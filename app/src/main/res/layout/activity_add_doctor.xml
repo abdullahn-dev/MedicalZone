@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Main Heading for Doctor Management -->
+    <TextView
+        android:id="@+id/main1Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Management"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Sub Heading for Add New Doctor -->
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Doctor"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:layout_below="@id/main1Heading"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sub Heading for instruction -->
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter the doctor's details below"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_below="@id/mainHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor's Name"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/subHeading"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Specialty EditText -->
+    <EditText
+        android:id="@+id/specialty_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specialty"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:layout_below="@id/name_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Add Doctor Button -->
+    <Button
+        android:id="@+id/add_doctor_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Doctor"
+        android:textSize="16sp"
+        android:layout_below="@id/specialty_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/primaryColor"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:onClick="addDoctor"/>
+
+    <!-- Add Bulk Doctor Button -->
+    <Button
+        android:id="@+id/add_bulk_doctor_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add Bulk Doctors"
+        android:textSize="16sp"
+        android:layout_below="@id/add_doctor_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/primaryColor"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:onClick="addBulkDoctors"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/main1Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Management"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Pateint Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#0000FF"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter New details below"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#0000FF"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+
+    <!-- Patient Name EditText with rounded background -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"/>
+
+    <!-- Patient Email EditText with rounded background -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"/>
+
+    <!-- Illness EditText with rounded background -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextIllness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Illness/Condition"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryColor"
+        android:text="Save Changes"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>

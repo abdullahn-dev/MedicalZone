@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#0F74D1</color>
+    <color name="purple">#880E4F</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="primary_text_color">#000000</color>
+    <color name="secondary_text_color">#555555</color>
+    <color name="table_background_color">#F0F0F0</color>
+    <color name="header_background_color">#FFEB3B</color>
+    <color name="table_heading_background_color">#FFCC00</color>
+    <color name="text_gray">#7F8C8D</color>
+</resources>

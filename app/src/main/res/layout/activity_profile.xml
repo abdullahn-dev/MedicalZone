@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ViewSwitcher for Setup Profile and View Profile -->
+    <ViewSwitcher
+        android:id="@+id/profile_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Setup Profile Layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setup Your Profile"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_black"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Profile Picture -->
+                <ImageView
+                    android:id="@+id/setup_profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/doc1"
+                    android:contentDescription="Profile Picture"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/upload_profile_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Picture"
+                    android:fontFamily="@font/poppins_regular"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_gravity="center" />
+
+                <!-- Name Input -->
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your name"
+                    android:inputType="textPersonName" />
+
+                <!-- Email Input -->
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textEmailAddress" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/save_profile_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save Profile"
+                    android:fontFamily="@font/poppins_regular"
+                    android:backgroundTint="@color/primaryColor"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- View Profile Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/view_profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="Profile Picture"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Profile Details -->
+            <TextView
+                android:id="@+id/view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Dr. XYZ"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: example@gmail.com"
+                android:textSize="16sp" />
+
+            <!-- Edit Profile Button -->
+            <Button
+                android:id="@+id/edit_profile_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+    </ViewSwitcher>
+
+</RelativeLayout>
